@@ -1,0 +1,14 @@
+{
+  "name": "laslesvpn",
+  "version": "1.0.0",
+  "description": "Landing con Sass",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.34.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Valdez <ivnvaldz@gmail.com>",
+  "license": "MIT"
+}
