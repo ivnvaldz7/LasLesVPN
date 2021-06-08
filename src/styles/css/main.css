@@ -1,3 +1,136 @@
+.header {
+  width: 90%;
+  margin: 1rem auto;
+  padding-top: 5rem;
+}
 
+.header__nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo--img {
+  width: 35%;
+}
+
+.header__nav--ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav--ul li {
+  padding: 1rem;
+}
+.header__nav--ul a {
+  font-size: 1.6rem;
+  color: #4F5665;
+  font-weight: 400;
+}
+.header__nav--ul a:hover {
+  border-bottom: 1px solid;
+  transition: 1s;
+}
+
+.header__nav--right {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__nav--right button:first-child {
+  border: none;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.header__nav--right button:nth-child(2) {
+  color: #F53855;
+  border: 1px solid;
+  padding: 0.5rem 3rem;
+  border-radius: 50px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.header__nav--right button:nth-child(2):hover {
+  background-color: #F53855;
+  color: #fff;
+  transition: 0.6s;
+}
+
+.main__content {
+  width: 90%;
+  height: 100px;
+  margin: 1rem auto;
+}
+
+.about {
+  height: 60rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 14rem 6.5rem 9rem;
+  grid-gap: 1.5rem;
+  padding-top: 5rem;
+}
+
+.about__title,
+.about__paragraph,
+.about__button {
+  grid-column: 1;
+}
+
+.about__title {
+  font-size: 4.3rem;
+  font-weight: 500;
+  line-height: 7rem;
+}
+
+.about__paragraph {
+  font-size: 1.6rem;
+  color: #4F5665;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.about__button {
+  width: 25rem;
+  height: 6.5rem;
+  background-color: #F53855;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  box-shadow: 0px 28px 42px -21px #F53855;
+}
+
+.about__image {
+  width: 100%;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 65.2%;
+  font-family: "Rubik";
+}
+
+body {
+  min-width: 320px;
+  max-width: 1440px;
+}
 
 /*# sourceMappingURL=main.css.map */

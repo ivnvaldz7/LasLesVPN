@@ -1,0 +1,47 @@
+.main__content{
+    width: 90%;
+    height: 100px;
+    margin: 1rem auto;
+}
+.about{
+    height: 60rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 14rem 6.5rem 9rem;
+    grid-gap: 1.5rem;
+    padding-top: 5rem;
+}
+
+.about__title,
+.about__paragraph,
+.about__button{
+    grid-column: 1;
+}
+.about__title{
+    font-size: 4.3rem;
+    font-weight: 500;
+    line-height: 7rem;
+}
+.about__paragraph{
+    @include paragraph()
+}
+.about__button{
+    width: 25rem;
+    height: 6.5rem;
+    background-color: $color-red;
+    color: $color-white;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 0px 28px 42px -21px $color-red;
+}
+.about__image{
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+

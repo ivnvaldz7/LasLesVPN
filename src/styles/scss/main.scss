@@ -1,5 +1,14 @@
+@import 'components/variables';
+@import 'components/header';
+@import 'components/mixins';
+@import 'components/mainContent';
+
+*{
+    @include main;
+}
+html{
+    @include FontSize;
+}
 body{
-    color: aliceblue;
-    font-size: 15px;
-    display: flex;
+    @include Layout;
 }
