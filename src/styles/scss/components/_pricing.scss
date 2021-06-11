@@ -1,0 +1,71 @@
+.main__pricing{
+    width: 100%;
+    height: auto;
+    background-color: $color-background;
+    margin: 5rem 0 5rem
+}
+.pricing__title{
+    @include title;
+    text-align: center;
+    padding-top: 5rem
+}
+.pricing__subtitle{
+    @include paragraph;
+    text-align: center;
+    padding: 1rem 0 5rem;
+}
+.pricing__cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pricing__card{
+    width: 27rem;
+    height: 72rem;
+    border: 1px solid #DDDDDD;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    &--img{
+        width: 14rem;
+        height: 16rem;
+        margin: 0 auto 3rem;
+    };
+    &--title{
+        padding-bottom: 2rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 3rem;
+    }
+    &--list{
+        @include paragraph;
+        font-size: 1.4rem;
+        text-align: start;
+        margin: 1rem auto 10rem;
+        li{
+            padding-bottom: 2rem;
+            list-style-image: url('/src/public/assets/icons/check.png');
+        }
+    }
+    span{
+        font-size: 2rem;
+        font-weight: 500;
+        p{
+            display: inline;
+            color: $color-grey;
+            font-weight: 400;
+        }
+    }
+    &--button{
+        width: 17rem;
+        height: 4.5rem;
+        margin: 1rem auto;
+        color: $color-red;
+        background-color: $color-white;
+        border: 1px solid;
+        font-weight: 600;
+        border-radius: 5rem;
+    }
+}

@@ -121,6 +121,7 @@
   height: 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: 5rem 0 5rem;
   box-shadow: 0px 31px 67px -46px #4F5665;
   -webkit-box-shadow: 0px 31px 67px -46px #4F5665;
   -moz-box-shadow: 0px 31px 67px -46px #4F5665;
@@ -194,14 +195,94 @@
   font-weight: 400;
   line-height: 3rem;
   font-size: 1.4rem;
+  padding-left: 2rem;
 }
-.features__list li::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: #2FAB73;
-  border-radius: 50%;
+.features__list li {
+  list-style-image: url("/src/public/assets/icons/check.png");
+}
+
+.main__pricing {
+  width: 100%;
+  height: auto;
+  background-color: #F6F6F6;
+  margin: 5rem 0 5rem;
+}
+
+.pricing__title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 5rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.pricing__subtitle {
+  font-size: 1.6rem;
+  color: #4F5665;
+  font-weight: 400;
+  line-height: 3rem;
+  text-align: center;
+  padding: 1rem 0 5rem;
+}
+
+.pricing__cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pricing__card {
+  width: 27rem;
+  height: 72rem;
+  border: 1px solid #DDDDDD;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.pricing__card--img {
+  width: 14rem;
+  height: 16rem;
+  margin: 0 auto 3rem;
+}
+.pricing__card--title {
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3rem;
+}
+.pricing__card--list {
+  font-size: 1.6rem;
+  color: #4F5665;
+  font-weight: 400;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  text-align: start;
+  margin: 1rem auto 10rem;
+}
+.pricing__card--list li {
+  padding-bottom: 2rem;
+  list-style-image: url("/src/public/assets/icons/check.png");
+}
+.pricing__card span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.pricing__card span p {
+  display: inline;
+  color: #4F5665;
+  font-weight: 400;
+}
+.pricing__card--button {
+  width: 17rem;
+  height: 4.5rem;
+  margin: 1rem auto;
+  color: #F53855;
+  background-color: #fff;
+  border: 1px solid;
+  font-weight: 600;
+  border-radius: 5rem;
 }
 
 * {
