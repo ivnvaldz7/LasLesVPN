@@ -290,8 +290,62 @@
   transition: all 400ms;
 }
 .pricing__card:hover {
+  border: 2px solid;
   border-color: #F53855;
-  transition: 600ms;
+  transition: 200ms ease-in;
+}
+
+.main__huge {
+  text-align: center;
+}
+
+.huge__title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 5rem;
+  width: 50%;
+  margin: auto;
+}
+
+.huge__subtitle {
+  font-size: 1.6rem;
+  color: #4F5665;
+  font-weight: 400;
+  line-height: 3rem;
+  width: 50%;
+  margin: 1rem auto 5rem;
+}
+
+.huge__img {
+  width: 90%;
+}
+
+.main__testimonial {
+  text-align: center;
+}
+
+.testimonial__title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 5rem;
+  width: 50%;
+  margin: auto;
+}
+
+.testimonial__subtitle {
+  font-size: 1.6rem;
+  color: #4F5665;
+  font-weight: 400;
+  line-height: 3rem;
+  width: 50%;
+  margin: 2rem auto 5rem;
+}
+
+.testimonial--card {
+  width: 40rem;
+  height: 20rem;
+  border: 1px solid #dddddd;
+  border-radius: 1rem;
 }
 
 * {

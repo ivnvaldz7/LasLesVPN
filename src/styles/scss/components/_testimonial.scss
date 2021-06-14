@@ -1,0 +1,19 @@
+.main__testimonial{
+    text-align: center;
+}
+.testimonial__title{
+    @include title;
+    width: 50%;
+    margin: auto;
+}
+.testimonial__subtitle{
+    @include paragraph;
+    width: 50%;
+    margin: 2rem auto 5rem;
+}
+.testimonial--card{
+    width: 40rem;
+    height: 20rem;
+    border: 1px solid #dddddd;
+    border-radius: 1rem;
+}

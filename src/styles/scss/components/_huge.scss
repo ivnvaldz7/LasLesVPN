@@ -1,0 +1,17 @@
+.main__huge{
+    text-align: center;
+}
+.huge__title{
+    @include title;
+    width: 50%;
+    margin: auto;
+}
+.huge__subtitle{
+    @include paragraph;
+    width: 50%;
+    margin: 1rem auto 5rem;
+}
+.huge__img{
+    width: 90%;
+}
+    

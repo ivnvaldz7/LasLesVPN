@@ -3,6 +3,9 @@
 @import 'components/mixins';
 @import 'components/mainContent';
 @import 'components/pricing';
+@import 'components/huge';
+@import 'components/testimonial';
+
 
 *{
     @include main;
