@@ -11,9 +11,53 @@
     width: 50%;
     margin: 2rem auto 5rem;
 }
-.testimonial--card{
+.testimonial__card{
     width: 40rem;
-    height: 20rem;
+    height: 25rem;
     border: 1px solid #dddddd;
     border-radius: 1rem;
+    padding: 2.5rem 1rem;
+    margin: 1rem;
+    position: relative;
+    img{
+        position: absolute;
+        top: 3rem;
+        left: 1.5rem;
+    }
+}
+.testimonial__card--title{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3rem;
+    display: grid;
+    padding-right: 4rem;
+    em{
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $color-grey;
+
+    }
+}
+.testimonial__card--paragraph{
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+
+.testimonial__card--stats {
+    position: absolute;
+    right: 3rem;
+    top: 4rem;
+    font-size: 1.6rem;
+    i{
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-image: url(/src/public/assets/icons/star.svg);
+        background-position: center;
+        margin-left: 1rem;
+    }
+        
+}
+.testimonial__container{
+    display: flex;
 }

@@ -1,0 +1,25 @@
+.main__suscribe{
+    width: 90%;
+    height: 22.3rem;
+    background-color: $color-white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 10rem;
+    z-index: 1;
+}
+.suscribe__title{
+    @include title
+}
+.suscribe__subtitle{
+    @include paragraph
+}
+.suscribe__button{
+    @include button
+}
+.main__suscribe--text{
+    width: 41rem;
+    height: 11.6rem;
+}

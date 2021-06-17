@@ -1,6 +1,6 @@
 .main__content{
     width: 90%;
-    height: 100px;
+    height: auto;
     margin: 1rem auto;
 }
 .about{
@@ -27,16 +27,7 @@
     @include paragraph()
 }
 .about__button{
-    width: 25rem;
-    height: 6.5rem;
-    background-color: $color-red;
-    color: $color-white;
-    border: none;
-    outline: none;
-    border-radius: 1rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    box-shadow: 0px 28px 42px -21px $color-red;
+    @include button
 }
 .about__image{
     width: 100%;

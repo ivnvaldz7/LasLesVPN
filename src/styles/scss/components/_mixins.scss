@@ -25,3 +25,15 @@
     font-weight: 500;
     line-height: 5rem;
 }
+@mixin button(){
+    width: 25rem;
+    height: 6.5rem;
+    background-color: $color-red;
+    color: $color-white;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 0px 28px 42px -21px $color-red;
+}
