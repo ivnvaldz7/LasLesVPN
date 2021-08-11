@@ -1,50 +1,59 @@
-.main__footer{
-    width: 100%;
-    height: 50rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: $color-background;
-    position: relative;
-    padding: 5rem;
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: flex-start;
+  background-color: $colorBackground;
+  padding: 15rem 15rem 3rem;
 }
-.footer__img{
-    width: 15rem;
-    height: 3.6rem;
-    margin: 10rem 0 2rem;
+.footer-social {
+  height: auto;
+  &__img {
+    width: 104px;
+    height: 24px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: $lineHeight;
+    color: $colorGrey;
+  }
+  &__copy {
+    display: block;
+    font-size: 16px;
+    color: $colorGrey;
+    margin-top: 3rem;
+  }
 }
-.footer__text{
-    @include paragraph;
-    padding: 1rem  10rem 3rem 0;
+.footer-social__media {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  color: $colorRed;
+  padding-top: 3rem;
+  & i {
+    width: 40px;
+    height: 40px;
+    padding: 14px 14px 16px 14px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 12px 49px -8px rgb(0 0 0 / 68%);
+    -webkit-box-shadow: 0px 12px 49px -8px rgb(0 0 0 / 68%);
+    -moz-box-shadow: 0px 12px 49px -8px rgb(0 0 0 / 68%);
+  }
 }
-.footer__media{
-    width: 50%;
-    height: auto;
-    i{
-        font-size: 2rem;
-        color: $color-red;
-        background-color: $color-white;
-        border-radius: 50%;
-        padding: 1rem;
-        margin: 0 1rem 3rem 0rem;
-    }
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-.footer__copy{
-    @include paragraph
-}
-.footer__info{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10rem;
-    span{
-        font-size: 1.8rem;
-        line-height: 4rem;
-    }
-    li{
-        font-size: 1.6rem;
-        line-height: 4rem;
-    }
-    a{
-        color: $color-grey;
-    }
-        
+.footer-info__list {
+  & span {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 2rem;
+  }
+  & li {
+    padding-bottom: 1rem;
+  }
 }

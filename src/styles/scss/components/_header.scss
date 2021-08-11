@@ -1,59 +1,48 @@
-.header{
-    width: 90%;
-    margin: 1rem auto;
-    padding-top: 5rem;
+.header-nav {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  margin: 2rem 15rem;
 }
-.header__nav{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+.header-nav__ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+  &-a {
+    color: $colorGrey;
+  }
 }
-.header__logo{
-    display: flex;
-    justify-content: center;
-}
-.header__logo--img{
-    width: 35%;
-}
-.header__nav--ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    li{
-        padding: 1rem;
+
+.header-nav__btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 4rem;
+  & button:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $colorWhite;
+    color: $colorBlack;
+    border: none;
+  }
+  & button:nth-child(2) {
+    background-color: $colorWhite;
+    border: 1px solid $colorRed;
+    border-radius: 5rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: $colorRed;
+    padding: 10px 30px;
+    &:hover {
+      background-color: $colorRed;
+      color: white;
+      transition: 0.5s;
     }
-    a{
-        font-size: 1.6rem;
-        color: $color-grey;
-        font-weight: 400;
-        &:hover{
-            border-bottom: 1px solid;
-            transition: 1s;
-        }
-    }
+  }
 }
-.header__nav--right{
-    display: flex;
-    justify-content: space-evenly;
-    button:first-child{
-        border: none;
-        background-color: $color-white;
-        font-size: 1.6rem;
-        font-weight: 600;
-    }
-    button:nth-child(2){
-        color: $color-red;
-        border: 1px solid;
-        padding: .5rem 3rem;
-        border-radius: 50px;
-        background-color: $color-white;
-        font-weight: 600;
-        font-size: 1.6rem;
-        &:hover{
-            background-color: $color-red;
-            color: $color-white;
-            transition: .6s;
-        }
-    }
-    
+.header-nav__logo {
+  margin: auto 0;
+  & img {
+    width: 10.4rem;
+  }
 }

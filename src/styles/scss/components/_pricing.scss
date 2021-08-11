@@ -1,83 +1,76 @@
-.main__pricing{
-    width: 100%;
-    height: 100rem;
-    background-color: $color-background;
-    margin: 5rem 0 5rem
-}
-.pricing__title{
-    @include title;
+.pricing {
+  width: 100%;
+  height: auto;
+  margin-top: 10rem;
+  background-color: $colorBackground;
+  &-text {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 40%;
     text-align: center;
-    padding-top: 5rem
+    &__title {
+      @include title;
+      text-align: center;
+      padding: 5rem 0 2rem;
+    }
+    &__paragraph {
+      @include paragraph;
+    }
+  }
 }
-.pricing__subtitle{
-    @include paragraph;
-    text-align: center;
-    padding: 1rem 0 5rem;
+.pricing-cards {
+  margin: 5rem 15rem;
+  display: flex;
+  justify-content: space-between;
 }
-.pricing__cards{
-    display: flex;
-    justify-content: space-evenly;
+.pricing-card {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 32% 5% 32% 18%;
+  width: 330px;
+  height: 760px;
+  border: 1px solid #dddddd;
+  border-radius: 1rem;
+  background-color: $colorWhite;
+  &:hover {
+    border: 2px solid $colorRed;
+    transition: 0.1s ease-in;
+  }
+  &__img {
+    width: 144px;
+    height: 165px;
+    margin-top: 2rem;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: $lineHeight;
+    color: $colorBlack;
+  }
+  &__list {
+    font-size: 14px;
+    line-height: 30px;
+    color: $colorGrey;
+    & li::before {
+      content: url("/src/public/assets/icons/Vector.svg");
+      padding-right: 2rem;
+    }
+  }
+  & span {
+    font-size: 25px;
+    display: inline-flex;
+    color: $colorBlack;
+    & p {
+      color: $colorGrey;
+    }
+  }
+  &__button {
+    width: 177px;
+    height: 45px;
+    border: 1px solid;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    color: $colorRed;
+  }
 }
-.pricing__card{
-    width: 30%;
-    height: 77rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #DDDDDD;
-    background-color: $color-white;
-    border-radius: 1rem;
-    &--img{
-        width: 14rem;
-        height: 16rem;
-        margin: 0 auto 3rem;
-    }
-    
-    &--title{
-        font-size: 1.8rem;
-        margin-top: -5rem;
-        font-weight: 500;
-        line-height: 3rem;
-    }
-    &--list{
-        @include paragraph;
-        height: 30rem;
-        font-size: 1.4rem;
-        text-align: start;
-        li{
-            padding-bottom: 2rem;
-            list-style-image: url('/src/public/assets/icons/check.png');
-        }
-    }
-    span{
-        font-size: 2rem;
-        font-weight: 500;
-        p{
-            display: inline;
-            color: $color-grey;
-            font-weight: 400;
-        }
-    }
-    &--button{
-        width: 17rem;
-        height: 4.5rem;
-        margin: 1rem auto;
-        color: $color-red;
-        background-color: $color-white;
-        border: 1px solid;
-        font-weight: 600;
-        border-radius: 5rem;
-        &:hover{
-            background-color: $color-red;
-            color: $color-white;
-            transition: all 400ms;
-        }
-    }
-    &:hover{
-        border: 2px solid;
-        border-color: $color-red;
-        transition: 200ms ease-in;
-    }
-}
-

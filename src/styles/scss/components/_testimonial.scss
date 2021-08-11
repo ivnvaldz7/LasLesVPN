@@ -1,63 +1,69 @@
-.main__testimonial{
-    text-align: center;
+.testimonial {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.testimonial__title{
+.testimonial-text {
+  text-align: center;
+  width: 35%;
+
+  &__title {
     @include title;
-    width: 50%;
-    margin: auto;
-}
-.testimonial__subtitle{
+  }
+  &__paragraph {
     @include paragraph;
-    width: 50%;
-    margin: 2rem auto 5rem;
+  }
 }
-.testimonial__card{
-    width: 40rem;
-    height: 25rem;
-    border: 1px solid #dddddd;
-    border-radius: 1rem;
-    padding: 2.5rem 1rem;
-    margin: 1rem;
-    position: relative;
-    img{
-        position: absolute;
-        top: 3rem;
-        left: 1.5rem;
-    }
+.testimonial-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
-.testimonial__card--title{
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 3rem;
-    display: grid;
-    padding-right: 4rem;
-    em{
-        font-size: 1.4rem;
-        font-weight: 400;
-        color: $color-grey;
-
-    }
-}
-.testimonial__card--paragraph{
-    font-size: 1.6rem;
-    line-height: 3rem;
-}
-
-.testimonial__card--stats {
-    position: absolute;
-    right: 3rem;
-    top: 4rem;
-    font-size: 1.6rem;
-    i{
-        width: 10px;
-        height: 10px;
-        display: inline-block;
-        background-image: url(/src/public/assets/icons/star.svg);
-        background-position: center;
-        margin-left: 1rem;
-    }
-        
-}
-.testimonial__container{
+.testimonial-card {
+  width: 400px;
+  height: 230px;
+  border: 1px solid #dddddd;
+  border-radius: 1rem;
+  padding: 20px 30px 25px;
+  color: $colorBlack;
+  &:hover{
+    border: 1px solid $colorRed;
+    transition: .3s ease-in;
+  }
+  &__header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    & i {
+      display: inline-block;
+      background-image: url("/src/public/assets/icons/star.svg");
+      width: 12px;
+      height: 12px;
+      background-position: center;
+      margin-left: 10px;
+      background-repeat: no-repeat;
+    }
+    &-stats{
+        display: flex;
+    }
+  }
+  &__header-title {
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10rem;
+  }
+  &__header-subtitle {
+    font-size: 14px;
+    line-height: 15px;
+    color: $colorGrey;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: $lineHeight;
+  }
 }

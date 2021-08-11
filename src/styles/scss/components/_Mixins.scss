@@ -1,0 +1,12 @@
+@mixin title {
+    font-size: 35px;
+    line-height: 50px;
+    color: $colorBlack;
+    padding-bottom: 2rem;
+}
+@mixin paragraph {
+    font-size: 16px;
+    line-height: 30px;
+    color: $colorGrey;
+    padding-bottom: 2rem;
+}

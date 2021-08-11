@@ -1,0 +1,38 @@
+.features{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    grid-gap: 1rem;
+    margin-top: 10rem;
+    
+}
+.feature{
+    &-title{
+        @include title;
+        padding-bottom: 2rem;
+    }
+    &-paragraph{
+        @include paragraph;
+        padding-bottom: 2rem;
+    }
+    &-list{
+        font-size: 14px;
+        // line-height: 30px;
+        color: $colorGrey;
+        padding-top: 1rem;
+        & li{
+            display: flex;
+            padding-bottom: 15px;
+        }
+        & li::before{
+            content: url(/src/public/assets/icons/check.png);
+            padding-right: 8px;
+        }
+    }
+}
+.feature-img{
+    height: 350px;
+    & img{
+        height: inherit;
+    }
+}
